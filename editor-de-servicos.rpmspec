@@ -13,7 +13,7 @@ Summary:            Editor de Servicos
 Group:              Applications
 License:            MIT
 Vendor:             ThoughtWorks, Inc
-URL:                http://github.com/servicosgovbr/editor-de-servicos
+URL:                http://github.com/lmlima/editor-de-servicos
 BuildRoot:          %{builddir}
 Prefix:             /opt/%{name}
 BuildArchitectures: noarch
@@ -41,7 +41,6 @@ cat <<-EOF > %{buildroot}/etc/sysconfig/%{name}-overrides
 # Este arquivo sobrescreve variáveis de configuração do Editor de Serviços.
 # Para mais informações, veja a documentação em:
 #
-# http://servicosgovbr.github.io/editor-de-servicos/desenvolvimento/configuracao.html
 EOF
 
 mkdir -p %{buildroot}/etc/systemd/system

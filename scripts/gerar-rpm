@@ -27,7 +27,7 @@ cat <<-EOF > ~/.rpmmacros
 EOF
 
 echo "Compilando e gerando RPM..."
-./gradlew assemble buildRpm
+./gradlew assemble buildRpmLocal
 
 echo "Verificando assinatura no RPM..."
 rpm --checksig "$(find build/rpmbuild/RPMS/noarch/editor-de-servicos*.rpm -type f)"

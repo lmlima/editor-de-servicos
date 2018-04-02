@@ -55,7 +55,7 @@ public class RepositorioGitTest {
 
     @BeforeClass
     public static void setUpOrigin() {
-        cloneBare("https://github.com/servicosgovbr/cartas-de-teste.git", github);
+        cloneBare("https://github.com/lmlima/cartas-de-teste.git", github);
     }
 
     @Before
